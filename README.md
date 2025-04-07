@@ -1,5 +1,10 @@
 # A Ranking das Escolas 2024 - Mapa
 
+# AA Mapbox
+Para fazer uma página deste género é preciso ter uma conta no Mapbox e um 'access token'. Sempre que for preciso fazer um projeto destes novos, é preciso criar um novo estilo no Mapbox Studio e um novo access token para não implicar projetos anteriores.
+A Renascença tem uma conta no Mapbox.
+
+
 Feito com base no template 'Finder', da coleção 'Impact tools' do Mapbox.
 Demo:
 https://www.mapbox.com/impact-tools/finder
