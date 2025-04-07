@@ -1,0 +1,118 @@
+
+#sidebarA{
+    background-color: #f5f5f5;
+    color: #273343;
+    font-family: "Merriweather", serif;
+}
+
+#filterResults{
+    font-size: 12px;
+    color: white;
+    stroke-width: 0.5;
+    background-color: #273343;
+    font-family: "Merriweather", serif;
+}
+
+.filters-css {
+    font-family: "Merriweather", serif;
+    color: #273343;
+}
+
+.btn {
+    background-color: #d2d2d2;
+    color: #273343;
+}
+
+.theme{
+    background-color: #273343;
+}
+
+.select{
+    font-style: italic;
+    opacity: .7;
+    font-family: "Merriweather", serif;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+    padding: 6px 30px;
+    margin-left: 5px;
+}
+
+.listings .item {
+    font-size: 14px;
+    word-wrap: break-word;
+    text-decoration: none;
+    border-bottom: solid rgb(34, 33, 33, .3) 1px;
+    font-family: "Merriweather", serif;
+}
+
+.listings .item:last-child {
+    border-bottom: none;
+}
+
+.listings .item .title {
+    display: inline-block;
+    width: 100%;
+    color: #273343;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+}
+
+.title-page {
+    font-size: 25pt;
+    line-height: 25pt;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #273343;
+}
+
+
+.clearfix {
+    display: block;
+}
+
+.clearfix::after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.mapboxgl-popup-content {
+    font: 400 15px/22px 'Merriweather', serif;
+    text-align: left;
+    padding: 5;
+    width: 250px;
+  }
+
+.mapboxgl-popup-close-button {
+    display: none;
+  }
+
+.mapboxgl-popup-content h3 {
+    color:black;
+    font-weight: 500;
+    margin: 0;
+    display: block;
+    font-family: "Merriweather", serif;
+  }
+
+
+  

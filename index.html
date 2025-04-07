@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Ranking das Escolas 2023 - Mapa</title>
+    <link href='https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.min.css' rel='stylesheet'>
+    <script src='https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css" rel="stylesheet" />
+    <script
+        src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet'
+        href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css'
+        type='text/css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/geojson/0.5.0/geojson.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="https://unpkg.com/csv2geojson@latest/csv2geojson.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel='stylesheet' href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class='flex-parent viewport-full relative scroll-styled'>
+        <div class='flex-child w-full w360-ml absolute static-ml left bottom'>
+            <div class='flex-parent flex-parent--column viewport-third bg-white'>
+                <div class='flex-child flex-child--grow'>
+                    <div id="sidebarA"
+                        class="theme py36 px30">
+                        <img src="https://imagefiles01.blob.core.windows.net/renascenca/rankingescolas-2024-simbolo16700d44.png" alt="Símbolo do ranking das escolas da Renascença" class="w60 py24">
+                        <h1 id='title' class='txt-l-ml txt-m txt-bold mb6 mr0-ml mr24 align-left block title-page'>
+                        </h1>
+                        <p id='description' class='txt-s py3 none block-ml'> 
+                        </p>
+
+                         <div class="inline-block">
+                        <p class='txt-s py3 inline-block txt-bold
+                        '> <span style="color:#af9e2f"> <svg class='icon inline-block'><use xlink:href='#icon-circle'/></svg>
+                        Escola artística </span>
+                        </p>
+                    </div>
+                    <div class="inline-block">
+                        <p class='txt-s py3 inline-block color-pink txt-bold
+                        '> <span style="color:#fa797c"> <svg class='icon inline-block'><use xlink:href='#icon-circle'/></svg> Ensino Secundário com Artes Visuais
+                        </span> </p>
+                    </div>
+                    <div class="inline-block">
+                        <p class='txt-s py3 inline-block color-blue-dark txt-bold
+                        '> <span style="color:#273343"><svg class='icon inline-block'><use xlink:href='#icon-circle'/></svg> Escola profissional
+                        </span></p>
+                    </div>
+
+                       
+                        <div class="flex-parent flex-parent--left-main relative-ml absolute right top mt0-ml mt12">
+                            <button id='filterResults' class='txt-bold btn btn--stroke mr0-ml mr12 px18-ml px6 my18'>
+                                <svg class='icon inline-block align-middle h24 w24'>
+                                    <use xlink:href='#icon-filter' /></svg>
+                                <p class="inline-block-ml align-middle remove none">Filtros</p>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div id="listings" class="flex-child viewport-twothirds py12 px30 listings scroll-auto overflow-hidden h360"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class='flex-child flex-child--grow w-auto viewport-full-ml viewport-twothirds' id='map'>
+
+        </div>
+
+        <div id='modal'
+            class='absolute top right bottom left scroll-auto hide-visually flex-parent flex-parent--center-main mt120-ml filters-css'>
+            <div class='pt36'>
+                <div class='flex-child bg-white round relative scroll-auto'>
+                    <button id='exitButton' class='absolute top right px12 py12'>
+                        <svg class='icon link color-darken50'>
+                            <use xlink:href='#icon-close'></use>
+                        </svg>
+                    </button>
+                    <div class='px24 py24'>
+                        <form id="filters"></form>
+                        <div class='align-left py12'></div>
+                        <div class="flex-parent flex-parent--center-main">
+                            <button id="removeFilters" class="btn">Limpar filtros</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+<script>
+
+</script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</html>
