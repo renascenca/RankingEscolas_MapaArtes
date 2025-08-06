@@ -14,5 +14,5 @@ https://www.mapbox.com/webinars/finder-map-app
 
 ## Notas
 Os dados em bruto estão no csv RankingEscolas_Artisticas_Mapa.csv e estão linkados para este repositório.
-O link para os dados no ficheiro config.js só pode ser feito a partir do ficheiro raw dos dados no Github. A importação do ficheiro local ou a partir do Google Sheets vai dar erro por causa de uma nova configuração de segurança.
+O link para os dados no ficheiro config.js só pode ser feito a partir do ficheiro raw dos dados no Github (é só copiar o URL e colar no campo correspondente). A importação do ficheiro local ou a partir do Google Sheets vai dar erro por causa de uma nova configuração de segurança.
 
